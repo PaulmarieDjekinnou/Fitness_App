@@ -10,7 +10,8 @@ class _AccountPageState extends State<AccountPage> {
   Widget build(BuildContext context) {
     return Center(
       child: Container(
-        child: Text("Hello from Account Page"),
+        child: Text("Hello from Account Page"
+        ),
       ),
     );
   }
