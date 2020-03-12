@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 
+import './challenge-screen/challenge_page.dart';
 import '../../theme/colors.dart';
 import 'account_page.dart';
 import 'activities_page.dart';
-import 'challenge_page.dart';
 import 'plans_page.dart';
 
 class AppPage extends StatefulWidget {
@@ -32,6 +32,7 @@ class _AppPageState extends State<AppPage> {
       ),
       bottomNavigationBar: BottomNavigationBar(
         onTap: onTabTapped,
+        elevation: 0.0,
         //selectedItemColor: kOrangeColor,
         currentIndex: _currentIndex,
         type: BottomNavigationBarType.fixed,
