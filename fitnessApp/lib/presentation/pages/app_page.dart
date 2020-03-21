@@ -5,7 +5,7 @@ import './challenge-screen/challenge_page.dart';
 import './plans-screen/plans_page.dart';
 import './profil-screen/account_page.dart';
 import '../../theme/colors.dart';
-import 'activities_page.dart';
+import './activities-screen/activities_page.dart';
 
 class AppPage extends StatefulWidget {
   @override
