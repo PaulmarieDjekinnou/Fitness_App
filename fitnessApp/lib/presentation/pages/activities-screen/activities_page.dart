@@ -1,3 +1,4 @@
+import 'package:fitnessApp/presentation/pages/activities-screen/components/activity_card.dart';
 import 'package:fitnessApp/theme/colors.dart';
 import 'package:flutter/material.dart';
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
@@ -67,7 +68,7 @@ class _ActivitiesPageState extends State<ActivitiesPage> {
             ),
           ),
           TableCalendar(
-            initialCalendarFormat: CalendarFormat.month,
+            initialCalendarFormat: CalendarFormat.week,
             calendarStyle: CalendarStyle(
               todayColor: kOrangeColor,
               selectedColor: Colors.blue,
@@ -77,6 +78,15 @@ class _ActivitiesPageState extends State<ActivitiesPage> {
               centerHeaderTitle: true
             ),
             calendarController: _calendarController
+          ),
+          Expanded(
+            child: ListView.builder(
+              padding: const EdgeInsets.all(8),
+              itemCount: 3,
+              itemBuilder: (BuildContext context, int index) {
+                return ActivityCard();
+              }
+            ),
           )
         ],
       ),
